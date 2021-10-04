@@ -15,7 +15,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    step.buildNpm('abigael081497')
+                    step.buildNpm()
                 }
             }
         }
