@@ -15,14 +15,14 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
-                    step.buildNpm()
+                    gv.buildNpm()
                 }
             }
         }
         stage("Push image") {
             steps {
                 script {
-                    step.pushImage()
+                    gv.pushImage()
                 }
             }
           }        
